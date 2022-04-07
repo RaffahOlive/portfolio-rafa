@@ -1,22 +1,22 @@
-import './style.scss';
-
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-export function Header()
+import { Header, Li, Nav, Ul } from './style';
+
+export function AppHeader()
 {
     return (
-        <header>
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="portfolio">Portfólio</Link></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#"><FaLinkedin /></a></li>
-                    <li><a href="#"><FaGithub /></a></li>
-                </ul>
-            </nav>
-        </header>
+        <Header>
+            <Nav>
+                <Ul>
+                    <Li><Link to="/">Home</Link></Li>
+                    <Li><Link to="portfolio">Portfólio</Link></Li>
+                    <Li><a href="#">Contato</a></Li>
+                    <Li><a href="#"><FaLinkedin /></a></Li>
+                    <Li><a href="#"><FaGithub /></a></Li>
+                </Ul>
+            </Nav>
+        </Header>
     )
 }

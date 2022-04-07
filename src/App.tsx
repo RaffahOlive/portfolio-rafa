@@ -4,14 +4,14 @@ import './App.scss';
 import { Portfolio } from "./pages/Portfolio/portfolio";
 import { Main } from "./pages/Main";
 
-import { Header } from "./components/Header"
+import { AppHeader } from "./components/Header"
 
 
 function App()
 {
   return (
     <>
-      <Header />
+      <AppHeader />
       <Routes>
         <Route path="/" element={ <Main /> } />
         <Route path="portfolio" element={ <Portfolio /> } />
