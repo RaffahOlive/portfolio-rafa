@@ -1,11 +1,10 @@
-import './style.scss';
+import { Main } from './style';
 
-export function Main()
+export function AppMain()
 {
     return (
-        <div>
+        <Main>
             <h1>Corpo do site</h1>
-        </div>
-
+        </Main>
     )
 }

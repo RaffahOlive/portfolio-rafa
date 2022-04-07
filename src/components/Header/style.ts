@@ -1,30 +1,32 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-background: #111A23;
+    background: #111A23;
 `;
 
 export const Nav = styled.nav`
-
-`;
-
-export const Ul = styled.ul`
-text-align: center;
-`;
-
-export const Li = styled.li`
-display: inline-block;
-list-style: none;
-margin: 10px 20px 10px 0;
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: large;
-
-        transition: .5s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                letter-spacing: 3px;
+                margin-left: 32px;
+                padding-right: 128px;
+            }
+        }
+        a{
+            margin-left: 5px
+        }
     }
-
-    a:hover {
-        color: #A9C4E4;
-     }
+    @media(max-width: 999px) {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vh;
+        background: #111A23;
 `;
+
