@@ -21,12 +21,14 @@ export const Nav = styled.nav`
         a{
             margin-left: 5px
         }
-    }
-    @media(max-width: 999px) {
+
+        @media screen and(max-width: 960px) {
         position: absolute;
         top: 8vh;
         right: 0;
         width: 50vh;
         background: #111A23;
+    }
 `;
+
 
