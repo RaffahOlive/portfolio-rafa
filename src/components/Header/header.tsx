@@ -2,20 +2,17 @@ import { Link } from "react-router-dom";
 
 //icons
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HeaderNav, IconsDiv, LinksDiv, MainDiv } from "./HeaderStyles";
+import { HeaderNav, IconsDiv, MainDiv } from "./HeaderStyles";
 
 
 export function Header(){
     return(
         <HeaderNav>
         <MainDiv>
-            <Link to="/">Rafael Ribeiro</Link>
-        </MainDiv>
-
-        <LinksDiv>
+            <Link to="/">Home</Link>
             <Link to="portfolio">Portfolio</Link>
             <Link to="contato">Contato</Link>
-        </LinksDiv>
+        </MainDiv>
 
         <IconsDiv>
             <a href="https://linkedin.com/in/rafaelribeirodev"><FaLinkedin /></a>
